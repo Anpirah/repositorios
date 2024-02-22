@@ -1,0 +1,159 @@
+.encabezado {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	color: #009D95;
+	padding: 10px 20px;
+}
+
+.logo {
+	font-size: 24px;
+}
+
+.menu ul,
+.menu-lateral ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu ul a:hover{
+	color:#134745;
+	transition: all ease 0.3s;
+	cursor:pointer;
+}
+.menu li:hover{
+	transform: scale(1.2);
+	transition: all ease 0.3s;
+}
+.menu li img {
+	height: 15px;
+}
+
+.header .btn button {
+	padding: 3px 3px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+  }
+.header .btn button:hover {
+	color: #204947;
+	transform: scale(1.1);
+  }
+
+.menu li,
+.menu-lateral li {
+	margin-right: 20px;
+}
+
+.menu a,
+.menu-lateral a {
+	color: #009D95;
+	text-decoration: none;
+}
+
+.iconos {
+	display: flex;
+	align-items: center;
+}
+
+.iconos i {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.menu-lateral {
+	display: none;
+}
+
+#wrapped {
+	position: relative;
+}
+.contenedor-imagen {
+	position: relative;
+	display: inline-block;
+}
+.frase {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: whitesmoke;
+	font-size: 32px;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+	position: relative;
+	padding: 10px;
+	bottom: 0;
+}
+.suscrip,
+.message {
+	position: absolute;
+	padding: 5px;
+}
+.suscrip {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 1%;
+	border: 15px solid #EA9FA6;
+	background-color: #EA9FA6;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Helvetica', sans-serif;
+	border-radius: 20px;
+}
+.message {
+	right: 1%;
+	padding-top: 15px;
+	border: 15px solid #EA9FA6;
+	border-radius: 100px;
+	background-color: #EA9FA6;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	.encabezado {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.logo,
+	.iconos {
+		order: -1;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu-lateral {
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+
+@media only screen and (min-width: 769px) {
+	.menu-lateral {
+		display: none;
+	}
+
+	.menu ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.menu li {
+		margin-right: 20px;
+	}
+}
