@@ -18,12 +18,12 @@
 	padding: 0;
 }
 .menu ul a:hover{
-	color:#134745;
+	color:#00837e;
 	transition: all ease 0.3s;
 	cursor:pointer;
 }
 .menu li:hover{
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transition: all ease 0.3s;
 }
 .menu li img {
@@ -75,9 +75,9 @@
 }
 .frase {
 	position: absolute;
-	bottom: 20px;
+	bottom: 20%;
 	left: 20px;
-	color: whitesmoke;
+	color: rgb(236, 154, 158);
 	font-size: 32px;
 	font-weight: bold;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
